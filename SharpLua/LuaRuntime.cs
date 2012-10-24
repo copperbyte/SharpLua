@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 using SharpLua.AST;
 using SharpLua.Library;
@@ -114,7 +114,7 @@ namespace SharpLua
                                                       bool createFileLib = true,
                                                       bool createMathLib = true,
                                                       bool createScriptLib = true,
-                                                      bool createWinFormsLib = true,
+                                                      bool createWinFormsLib = false,
                                                       bool createConsoleLib = true,
                                                       bool createCoroutineLib = true,
                                                       bool createPackageLib = true,
@@ -141,8 +141,8 @@ namespace SharpLua
                 OSLib.RegisterModule(global);
             if (createScriptLib)
                 ScriptLib.RegisterModule(global);
-            if (createWinFormsLib)
-                WinFormLib.RegisterModule(global);
+            //if (createWinFormsLib)
+            //    WinFormLib.RegisterModule(global);
             if (createConsoleLib)
                 ConsoleLib.RegisterModule(global);
             if (createCoroutineLib)
@@ -154,7 +154,7 @@ namespace SharpLua
             if (createFileSystemLib)
                 FileSystemLib.RegisterModule(global);
             
-            global.SetNameValue("_WORKDIR", new LuaString(Application.StartupPath + "\\"));
+            global.SetNameValue("_WORKDIR", new LuaString(/*Application.StartupPath +*/ "\\"));
             global.SetNameValue("_VERSION", new LuaString("Sharp Lua 1.1"));
             global.SetNameValue("_G", global);
             
@@ -176,8 +176,8 @@ namespace SharpLua
                     preload.SetNameValue("os", (LuaTable) global.GetValue("os"));
                 if (createScriptLib)
                     preload.SetNameValue("script", (LuaTable) global.GetValue("script"));
-                if (createWinFormsLib)
-                    preload.SetNameValue("WinForms", (LuaTable) global.GetValue("WinForms"));
+                //if (createWinFormsLib)
+                //    preload.SetNameValue("WinForms", (LuaTable) global.GetValue("WinForms"));
                 if (createConsoleLib)
                     preload.SetNameValue("console", (LuaTable) global.GetValue("console"));
                 if (createCoroutineLib)
@@ -228,8 +228,8 @@ namespace SharpLua
         public static void REPL(string[] args)
         {
             // Create global variables
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
             GlobalEnvironment = LuaRuntime.CreateGlobalEnviroment();
             PrintBanner();
             // how to handle errors
@@ -344,7 +344,7 @@ namespace SharpLua
         {
             try {
                 // check startup script
-                LuaRuntime.RunFile(Application.StartupPath + "\\init", GlobalEnvironment);
+                LuaRuntime.RunFile(/*Application.StartupPath +*/ "\\init", GlobalEnvironment);
             } catch (IOException) {
                 // probly dont exist.
                 // just ignore
@@ -355,7 +355,7 @@ namespace SharpLua
             }
             try {
                 // check startup script
-                LuaRuntime.RunFile(Application.StartupPath + "\\boot", GlobalEnvironment);
+                LuaRuntime.RunFile(/*Application.StartupPath +*/ "\\boot", GlobalEnvironment);
             } catch (IOException) {
                 // probly dont exist.
                 // just ignore
@@ -366,7 +366,7 @@ namespace SharpLua
             }
             try {
                 // check startup script
-                LuaRuntime.RunFile(Application.StartupPath + "\\start", GlobalEnvironment);
+                LuaRuntime.RunFile(/*Application.StartupPath +*/ "\\start", GlobalEnvironment);
             } catch (IOException) {
                 // probly dont exist.
                 // just ignore

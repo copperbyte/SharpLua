@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 using SharpLua.LuaTypes;
 
 namespace SharpLua
@@ -32,13 +32,13 @@ namespace SharpLua
                 object enumValue = Enum.Parse(propertyInfo.PropertyType, (string)value);
                 propertyInfo.SetValue(obj, enumValue, null);
             }
-            else if (propertyInfo.PropertyType.FullName == "System.Drawing.Image")
+            /*else if (propertyInfo.PropertyType.FullName == "System.Drawing.Image")
             {
                 LuaTable enviroment = LuaRuntime.GlobalEnvironment.GetValue("_G") as LuaTable;
                 LuaString workDir = enviroment.GetValue("_WORKDIR") as LuaString;
                 var image = System.Drawing.Image.FromFile(Path.Combine(workDir.Text, (string)value));
                 propertyInfo.SetValue(obj, image, null);
-            }
+            }*/
             else
             {
                 propertyInfo.SetValue(obj, value, null);
@@ -66,10 +66,10 @@ namespace SharpLua
                                                                                 }));
                             break;
                         case "System.Windows.Forms.TreeViewEventHandler":
-                            eventInfo.AddEventHandler(control, new TreeViewEventHandler((sender, e) =>
-                                                                                        {
-                                                                                            (value as LuaFunc).Invoke(new LuaValue[] { new LuaUserdata(sender), new LuaUserdata(e) });
-                                                                                        }));
+                            //eventInfo.AddEventHandler(control, new TreeViewEventHandler((sender, e) =>
+                            //                                                            {
+                            //                                                                (value as LuaFunc).Invoke(new LuaValue[] { new LuaUserdata(sender), new LuaUserdata(e) });
+                            //                                                            }));
                             break;
                         default:
                             throw new NotImplementedException(eventInfo.EventHandlerType.FullName + " type not implemented.");

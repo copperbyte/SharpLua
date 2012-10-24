@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="e:\Dev\src\SharpLua\SharpLua\Properties\AssemblyInfo.cs">
+    <Files>
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\BaseLib.cs" Line="283" Column="37" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\ScriptLib.cs" Line="13" Column="3" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\WinFormLib.cs" Line="7" Column="14" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\LuaRuntime.cs" Line="120" Column="23" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\ObjectToLua.cs" Line="41" Column="16" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\Properties\AssemblyInfo.cs" Line="25" Column="1" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\LuaTypes\LuaCoroutine.cs" Line="67" Column="25" />
+      <File FileName="e:\Dev\src\SharpLua\SharpLua\AssemblyCache.cs" Line="66" Column="21" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

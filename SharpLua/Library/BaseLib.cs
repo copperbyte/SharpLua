@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 using SharpLua.AST;
 using SharpLua.LuaTypes;
@@ -277,6 +277,7 @@ namespace SharpLua.Library
         
         public static LuaValue OpenFile(LuaValue[] values)
         {
+			/*
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Lua files|*.lua|SharpLua files|*.slua|wLua files|*.wlua|All Files|*.*";
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -284,7 +285,7 @@ namespace SharpLua.Library
                 Console.WriteLine("Loading file '" + Path.GetFileName(ofd.FileName) + "'...");
                 return LuaRuntime.RunFile(ofd.FileName, LuaRuntime.GlobalEnvironment);
             }
-            else
+            else*/
                 return LuaNil.Nil;
         }
         
