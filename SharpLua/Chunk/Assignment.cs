@@ -82,17 +82,23 @@ namespace SharpLua.AST
             LuaTable table = baseValue as LuaTable;
             if (table != null)
             {
-                if (table.MetaTable != null)
-                {
-                    newIndex = table.MetaTable.GetValue("__newindex");
-                    // to be finished at the end of this method
-                }
-
-                if (newIndex == LuaNil.Nil)
-                {
-                    table.SetKeyValue(key, value);
+                if(table.ContainsKey(key)) {
+	                table.SetKeyValue(key, value);
                     return;
                 }
+				else {
+					if (table.MetaTable != null)
+	                {
+	                    newIndex = table.MetaTable.GetValue("__newindex");
+	                    // to be finished at the end of this method
+	                }
+
+	                if (newIndex == LuaNil.Nil)
+	                {
+	                    table.SetKeyValue(key, value);
+	                    return;
+	                }
+				}
             }
             else if ((baseValue as LuaClass) != null)
             {
