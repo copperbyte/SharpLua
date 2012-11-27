@@ -8,7 +8,6 @@
     <MyType>Windows</MyType>
     <RootNamespace>SharpLua.SharpDevelop.AddIn</RootNamespace>
     <AssemblyName>SharpLuaAddIn</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OptionInfer>On</OptionInfer>
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
@@ -23,6 +22,8 @@
     <NoWarn>1591</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>

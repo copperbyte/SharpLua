@@ -1,6 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="e:\Dev\src\SharpLua\SharpLua\Properties\AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 2.10.8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SharpLua\LuaTypes\LuaTable.cs">
     <Files>
       <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\BaseLib.cs" Line="283" Column="37" />
       <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\ScriptLib.cs" Line="13" Column="3" />
@@ -10,6 +10,7 @@
       <File FileName="e:\Dev\src\SharpLua\SharpLua\Properties\AssemblyInfo.cs" Line="25" Column="1" />
       <File FileName="e:\Dev\src\SharpLua\SharpLua\LuaTypes\LuaCoroutine.cs" Line="67" Column="25" />
       <File FileName="e:\Dev\src\SharpLua\SharpLua\AssemblyCache.cs" Line="66" Column="21" />
+      <File FileName="SharpLua\LuaTypes\LuaTable.cs" Line="68" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
