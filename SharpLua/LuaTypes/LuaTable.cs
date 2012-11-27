@@ -113,6 +113,12 @@ namespace SharpLua.LuaTypes
             return false;
         }
 
+		public bool ContainsKey(string key)
+		{
+			LuaValue LKey = this.GetKey(key);
+			return this.ContainsKey(LKey);
+		}
+
         public void AddValue(LuaValue value)
         {
             // adds 1, because Lua index starts at 1.
