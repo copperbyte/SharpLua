@@ -15,7 +15,7 @@ namespace CSharpExampleProject
 {
     class Program
     {
-        public static void Main(string[] cmd_args_1938475092347027340582734) // random name doesnt interfere with my variables
+        public static void Main(string[] cmd_args_1934) // random name doesnt interfere with my variables
         {
             // Create a global environment
             LuaTable t = LuaRuntime.CreateGlobalEnviroment();
