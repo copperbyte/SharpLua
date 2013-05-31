@@ -1,59 +1,8 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 2.10.8" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SharpLua\LuaTypes\LuaTable.cs">
-    <Files>
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\BaseLib.cs" Line="283" Column="37" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\ScriptLib.cs" Line="13" Column="3" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\Library\WinFormLib.cs" Line="7" Column="14" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\LuaRuntime.cs" Line="120" Column="23" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\ObjectToLua.cs" Line="41" Column="16" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\Properties\AssemblyInfo.cs" Line="25" Column="1" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\LuaTypes\LuaCoroutine.cs" Line="67" Column="25" />
-      <File FileName="e:\Dev\src\SharpLua\SharpLua\AssemblyCache.cs" Line="66" Column="21" />
-      <File FileName="SharpLua\LuaTypes\LuaTable.cs" Line="68" Column="9" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SharpLua\Chunk\Assignment.cs">
-    <Files>
-      <File FileName="c:\Dev\gitsrc\SharpLua\SharpLua.Interactive\Program.cs" Line="20" Column="2" />
-      <File FileName="SharpLua\LuaRuntime.cs" Line="264" Column="1" />
-      <File FileName="SharpLua\Chunk\Chunk.cs" Line="50" Column="1" />
-      <File FileName="SharpLua\Chunk\Function.cs" Line="67" Column="1" />
-      <File FileName="SharpLua\Chunk\ExprStmt.cs" Line="25" Column="1" />
-      <File FileName="SharpLua\Expr\PrimaryExpr.cs" Line="21" Column="1" />
-      <File FileName="SharpLua\Expr\VarName.cs" Line="14" Column="1" />
-      <File FileName="SharpLua\LuaTypes\LuaTable.cs" Line="230" Column="1" />
-      <File FileName="SharpLua\Expr\FunctionCall.cs" Line="42" Column="1" />
-      <File FileName="SharpLua\Chunk\Assignment.cs" Line="89" Column="5" />
-      <File FileName="SharpLua\LuaTypes\LuaValue.cs" Line="9" Column="1" />
-      <File FileName="SharpLua\LuaTypes\LuaString.cs" Line="15" Column="1" />
->>>>>>> Get rid of some non-essentials
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Sample Projects" expanded="True">
-            <Node name="CSharpExampleProject" expanded="True" />
-          </Node>
-          <Node name="SharpLua" expanded="True">
-            <Node name="Chunk" expanded="True" />
-            <Node name="Expr" expanded="True" />
-            <Node name="LuaTypes" expanded="True" />
-          </Node>
-          <Node name="SharpLua.Interactive" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mixed Platforms" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Dev\gitsrc\SharpLua\SharpLua\Chunk\Assignment.cs" line="24" />
-      <Breakpoint file="C:\Dev\gitsrc\SharpLua\SharpLua\Chunk\Assignment.cs" line="81" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="SharpLua\Expr\PrimaryExpr.cs" line="18" offsetX="614" offsetY="306" expression="baseValue" liveUpdate="False" />
-    <Watch file="SharpLua\Chunk\Chunk.cs" line="50" offsetX="518" offsetY="594" expression="statement" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
