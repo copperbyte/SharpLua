@@ -16,10 +16,8 @@
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
     <RemoveIntegerChecks>False</RemoveIntegerChecks>
-    <OptionExplicit>On</OptionExplicit>
-    <OptionStrict>Off</OptionStrict>
-    <OptionCompare>Binary</OptionCompare>
-    <OptionInfer>Off</OptionInfer>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -46,9 +44,15 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <AdditionalParameters />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <AdditionalParameters />
   </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -72,7 +76,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SharpLua\SharpLua.csproj">
       <Project>{9B6F4AAC-1B76-4CB6-B7CE-EFBBB0C7F5C0}</Project>
-      <Name>SharpLua %28Old\SharpLua%29</Name>
+      <Name>SharpLua</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
